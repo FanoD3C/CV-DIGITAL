@@ -23,7 +23,7 @@
     t
 }
 #title1::before {
-    content: 'Is Amazing By FanoD3C / Estefano Delgado'; /* content; permite agregar texto de contenido */
+    content: 'Is Amazing'; /* content; permite agregar texto de contenido */
     position: absolute;
     bottom: -70px;
     font-size: 40px;
