@@ -1,0 +1,99 @@
+/* 
+    Creador: Fanono3DC / Estefano Delgado Zepeda
+    Fecha: XX-XX-2021
+    Contacto: Fanodev310@gmail.com
+    Instagram: @FanoD3C
+    Facebook: @FanoD3C
+    
+    Resumen: Este sitio lo he creado desde 0 y documentado todo para poder 
+    ser mejor entendido por los demas desarrolladores y asi lo puedan usar
+    para cualquier uso, espero poder ayudarte, si quieres ayudarme 
+    invitame un cafe. (link mas abajo)
+    Link del sitio + recursos: https://github.com/FanoD3C/CV-DIGITAL
+    Regalame un Cafe: "proximamente"
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* formato del cuerpo del sitio */
+body{
+    background: brown;
+}
+/* formato del contenedor principal */
+.content-cabecera {
+    width: 100%;
+    height: 100%;
+    overflow: 0;
+    text-align: center;
+    background: gainsboro;
+}
+/* formato del logo de la imagen */
+.content-logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #0981a5c2 ;
+    margin: auto;
+    background-color: indigo;
+}
+.content-logo p {
+    
+}
+/* adaptando la imagen al formato del content-logo */
+.content-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#canvas1{
+ /* position: absolute; */
+ box-sizing: border-box;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}   
+/* titulo de las particulas */
+/* #title1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    line-height: 110px;
+    white-space: nowrap;
+    border-top: 5px solid black;
+    box-sizing: border-box;
+    
+} */
+/* 
+#title1::before {
+    content: 'Is Amazing';  content; permite agregar texto de contenido 
+    position: absolute;
+    bottom: -70px;
+    font-size: 40px;
+    para que work el align, se debe agregar width:100% 
+    text-align: center;
+    width: 100%;
+}
+*/
+
+@media screen and (max-width: 800px){
+    .contenedor {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contenedor {
+        width: 100%;
+    }
+}
+
+
