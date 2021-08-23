@@ -1,3 +1,16 @@
+// Creador: FanoD3C / Estefano Delgado Zepeda
+// Fecha: XX-XX-2021
+// Contacto: Fanodev310@gmail.com
+// Instagram: @FanoD3C
+// Facebook: @FanoD3C
+
+// Resumen: Este sitio lo he creado desde 0 y documentado todo para poder 
+// ser mejor entendido por los demas desarrolladores y asi lo puedan usar
+// para cualquier uso, espero poder ayudarte, si quieres ayudarme 
+// invitame un cafe. (link mas abajo)
+// Link del sitio + recursos: https://github.com/FanoD3C/CV-DIGITAL
+// Regalame un Cafe: "proximamente"
+
 // creamos una variable para utilizar logicamente la etiqueta canvas llamada "canvas1"
 const canvas = document.getElementById('canvas1');
 // Avisamos el metodo en js para usar graficos 2D o 3D
@@ -79,4 +92,4 @@ function  animate(){ // aqui creamos el bucle animado
     requestAnimationFrame(animate);
 }
 animate();
-//-NOTA1: ES6 LLAMO CONSTRUCTOR AL METODO QUE UTILIZA UN OBJETO AGREGADO A UNA FUNCION
+//-NOTA1: ES6 LLAMO "CONSTRUCTOR" AL METODO QUE UTILIZA UN OBJETO AGREGADO A UNA FUNCION
