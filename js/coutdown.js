@@ -31,7 +31,7 @@ const getTimeRest = deadline =>{ // parametro (con tipo de dato STRING) que reci
         const ele = document.getElementById(elem) ;
         const updateTime = setInterval (() => {
             let time = getTimeRest(deadline);
-        ele.innerHTML = `${time.timeDays}d:${time.timeHours}h:${time.timeMinutes}${time.timeSeconds}s`;
+        ele.innerHTML = `${time.timeDays}d:${time.timeHours}h:${time.timeMinutes}m:${time.timeSeconds}s`;
             if (time.timeRest <=1) {
                 clearInterval(updateTime);
                 elem.innerHTML = finalMessage;
