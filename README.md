@@ -1,6 +1,7 @@
-# CV-DIGITAL
-MI PORTAFOLIO
-    👋 Hola, soy @ FanoD3C
-        En este repositorio guardare el link de mi sitio web o tambien conocido como protafolio profesional, en este portafolio demostrare las habilidades que tengo como desarrollador.
-        LINK: "PROXIMAMENTE" // sitio en construccion
-        
+# Responsive Navigation Menubar
+## [Watch it on youtube](https://youtu.be/1sBYOt3d1DA)
+### Responsive Navigation Menubar
+The incredible responsive navigation bar includes a sticky header, and in the mobile version, a beautiful drop-down menu containing a profile picture, personal data, links and social media icons using html css and javascript.
+
+Don't forget to join the channel for more videos like this.
+[Bedimcode](https://www.youtube.com/c/Bedimcode)

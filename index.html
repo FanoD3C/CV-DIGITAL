@@ -1,55 +1,99 @@
-<!-- tipo de documento -->
 <!DOCTYPE html>
-<!-- lenguaje nativo -->
-<html lang="es">
-<head>
-    <!-- SEO / META / VIEWPORT / ETC-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- llamar al css principal  -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-   <!-- titulo de la pesta;a -->
-    <title>CV-@FANOD3C</title>
-</head>
-<!-- cuerpo general del sitio -->
-<body>
-    <!-- contenedor de cabecera -->
-    <div class="content-cabecera">
-        <!-- contenedor del fondo animado -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>FanoD3C</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo">FANOD3C</a>
+    
+            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+    
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+    
+                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="assets/img/IMG_0166.JPG" alt="@Fanod3c">
+                        </div>
+                        
+                        <div class="nav__content" >
+                            <a href="#" class="nav__name">FANOD3C</a>
+                            <span class="nav__profesion">Desarrollador web</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">INICIO</a></li>
+                            <li class="nav__item"><a href="#content2" class="nav__link">SOBRE MI 2</a></li>
+                            <li class="nav__item"><a href="#content1" class="nav__link">PORTAFOLIO</a></li>
+                            <li class="nav__item"><a href="#content2" class="nav__link">CONTACTO</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="nav__social">
+                        <a href="https://www.facebook.com/Fanod3c/?ref=page_internal" class="nav__social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://github.com/FanoD3C" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="https://www.instagram.com/fanod3c/" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content-1" id="content1">
             <!-- contenedor del fondo animado -->
-        
-        <!-- contador de actualizacion del portafolio -->
-        <h2>Actualizar el protafolio en:<br><span id="clock"></span></h2> 
-        <!-- contenedor para el logo -->
-        <div class="content-logo">
-            <img src="image/IMG_0166.JPG" alt="FANOD3C"> <!-- imagen del logo -->
+            <div class="content-1-fond">
+            
+                <!-- contador de actualizacion del portafolio -->
+                <h2>Actualizar el protafolio en:<br><span id="clock"></span></h2> 
+                
+                <!-- contenedor para el logo -->
+                <div class="content-1-logo">
+                    <img src="assets/img/IMG_0166.JPG" alt="FANOD3C"> <!-- imagen del logo -->
+                </div>
+                <!-- <div id="qrcode">
+                    <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Ffanod3c.netlify.app%2F&s=8&e=l" alt="Generador de Códigos QR Codes"/>
+                </div> -->
+                    
+                
+                <!-- titulo -->
+                <h1>@FANOD3C</h1> 
+                <!--agregar redes sociales de mi trabajo-->
+                    
+                <!-- subtitulo -->
+                <h2>Welcome my bro!</h2>
+                <!-- parrafos -->
+                <p>Este es mi primer portafolio profesional y su diseño esta siendo desarrollado bajo el metodo mobile first. </P>
+                
+                    <!-- agregar correo de contacto -->        
+            </div>
         </div>
-        <!-- titulo -->
-        <h1>@FANOD3C</h1> 
-        <!--agregar redes sociales de mi trabajo-->
-            
-        <!-- subtitulo -->
-        <h2>Welcome my bro!</h2>
-        <!-- parrafos -->
-        <p>Este es mi primer portafolio profesional y su diseño esta siendo desarrollado bajo el metodo mobile first. </P>
-        
-            
-            <!-- agregar correo de contacto -->
-    </div>
-    <div>
         <!-- lienzo que permite graficos con JS -->
-       <!-- <canvas id="canvas1"></canvas>  -->
-   </div>
-  
+        <!-- <canvas id="canvas1"> </canvas> -->
+        
+       <div class="content-2-about-me" id="content2"> 
+           Sobre mi 
+       </div>
 
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
-     
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+         
+        <!-- contador de actualizacion del portafolio -->
+        <script type="text/javascript" src="assets/js/coutdown.js"></script>
+        <!-- icons menu -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
-</body>
- 
-<!-- llamar a los archivos js -->
- <script type="text/javascript" src="js/main.js"></script>
- <script type="text/javascript" src="js/coutdown.js"></script>
-
- </html>
+    </body>
+</html>
