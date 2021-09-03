@@ -1,3 +1,5 @@
+/* front responsive */
+
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
@@ -6,8 +8,8 @@
   --header-height: 3rem;
   
   /*===== Colores =====*/
-  --first-color: #3664F4;
-  --dark-color: #070D1F;
+  --first-color: #3191ff;
+  --dark-color: #0c0e14;
   --dark-color-alt: #282B3A;
   --white-color: #E6E7E9;
 
@@ -68,7 +70,7 @@ img {
 /*===== HEADER =====*/
 .header {
   width: 100%;
-  height: var(--header-height);
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,8 +98,6 @@ img {
   cursor: pointer;
 }
 
-
-
 /* contenido 1 */
 .content-1 {
   width: 100%; 
@@ -118,11 +118,11 @@ img {
 
 /* formato de propiedades del logo de la cabecera */
 .content-1-logo {
-  width: 275px;    /* tama;o del logo / anchura */
-  height: 275px;   /* tama;o del logo / altura */
+  width: 220px;    /* tama;o del logo / anchura */
+  height: 220px;   /* tama;o del logo / altura */
   border-radius: 50%;  /* borde del logo */
   overflow: hidden;    /* manera para hacer eficaz el border y este pueda visualizarse */
-  border: 4px solid #0981a5c2 ;   /* anchura del borde del logo y su respectivo color */
+  border: 4px solid #3191ff;  /* anchura del borde del logo y su respectivo color */
   margin: auto;   /* posicionamiento del logo de la cabecera */
   margin-top: 1%;
   margin-bottom: 1%;
@@ -164,7 +164,7 @@ img {
 }
 
 .nav__content {
-  height: 100%;
+  height: auto;
   -ms-grid-rows: max-content 1fr max-content;
       grid-template-rows: -webkit-max-content 1fr -webkit-max-content;
       grid-template-rows: max-content 1fr max-content;
