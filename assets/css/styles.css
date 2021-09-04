@@ -40,6 +40,8 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 500;
+  background-color: var(--dark-color);
+  color: white;
 }
 
 ul {
@@ -106,15 +108,16 @@ img {
   text-align: center;    
   color: black;
   /*opacity: 10%; */ /* aqui tengo un problema que arreglar, quiero hacer el fondo mas opaco*/
-
-
 }
+
+
 
 /* formato de propiedades de la imagen animada de la cabezera */
 .content-1-fond{
-  background: url(/assets/img/buygoku.gif); /* gif animado */
+  background: url(/assets/img/gif/buygoku.gif); /* gif animado */
   background-size: cover; /*aqui decidimos cubrir con el gif*/
   background-position: center; /* posicionamos el gif en el centro del conten1*/
+  border-radius: 1%;
 }
 
 /* formato de propiedades del logo de la cabecera */
@@ -144,6 +147,50 @@ img {
 /* formato de propiedades del contador de js */
 .content-1 h3 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* formato del segundo contenedor */
+.content-2 {
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  /* border: solid #3191ff; */
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/background-8.jpg);
+  background-size: cover;
+  max-width: 100%;
+  filter:brightness(0.4);
+  /* filtro de luminaria */
+  filter: drop-shadow(0 0 10px var(--first-color));
+}
+/* fondo background 8 */
+.content-2::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:-1;
+  border-radius: 20px;
+}
+.content-2 p {
+  text-align: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;color: blanchedalmond;
+}
+.content-2 
+h2,
+b {
+  color: var(--first-color);
+}
+
+.curriculum-pdf-fano {
+  width: 100%;
+  height: 500px;
 }
 
 
