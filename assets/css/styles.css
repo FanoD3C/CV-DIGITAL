@@ -107,6 +107,7 @@ img {
   color: black;
   /*opacity: 10%; */ /* aqui tengo un problema que arreglar, quiero hacer el fondo mas opaco*/
 
+
 }
 
 /* formato de propiedades de la imagen animada de la cabezera */
@@ -136,7 +137,7 @@ img {
 }
 /* formato de propiedades del subtitulo */
 .content-1 h2 {
-  margin-top: 4%;
+ padding-top: 3%;
 } 
 /* formato de propiedades del parrafo */
 
@@ -259,9 +260,9 @@ img {
   body {
     margin: 0;
   }
-  .header {
+  /* .header {
     height: calc(var(--header-height) + 1rem);
-  }
+  } */
   .header__logo, .header__toggle {
     display: none;
   }

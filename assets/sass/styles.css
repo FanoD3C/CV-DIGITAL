@@ -64,7 +64,7 @@ img {
 /*===== HEADER =====*/
 .header {
   width: 100%;
-  height: var(--header-height);
+  /* height: var(--header-height); */
   position: fixed;
   top: 0;
   left: 0;
@@ -245,9 +245,9 @@ img {
   body {
     margin: 0;
   }
-  .header {
+  /* .header {
     height: calc(var(--header-height) + 1rem);
-  }
+  } */
   .header__logo, .header__toggle {
     display: none;
   }
