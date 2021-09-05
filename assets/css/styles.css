@@ -109,7 +109,7 @@ img {
   bottom: 10px;
   right: 15px;
   padding: 5px;
-  transition: ease 0.1s;
+  transition: ease 0.3s;
   animation: efecto 2s infinite;
 }
 
