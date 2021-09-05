@@ -138,6 +138,51 @@ img {
 .content-1 h3 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* formato del segundo contenedor */
+.content-2 {
+  padding: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  /* border: solid #3191ff; */
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/background-8.jpg);
+  background-size: cover;
+  max-width: 100%;
+  filter:brightness(0.4);
+  /* filtro de luminaria */
+  filter: drop-shadow(0 0 10px var(--first-color));
+}
+/* fondo background 8 */
+.content-2::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  z-index:-1;
+  border-radius: 20px;
+}
+.content-2 p {
+  text-align: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;color: blanchedalmond;
+}
+.content-2 
+h2,
+b {
+  color: var(--first-color);
+}
+
+.curriculum-pdf-fano {
+  width: 100%;
+  height: 500px;
+}
+
 /*===== NAV =====*/
 @media screen and (max-width: 768px) {
   .nav {
