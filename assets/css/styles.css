@@ -229,7 +229,7 @@ button {
 
 /* boton back top top */
 #back-to-top-btn {
-  display: flex;
+  /* display: flex; */
   /* DISPLAY: FLEX; */
   position: fixed;
   bottom: 22px;
