@@ -322,6 +322,74 @@ b {
   height: 500px;
 }
 
+/* CONTENT / SECTION BANNER TECH */
+
+.section-header {
+  text-align: center;
+  text-transform: capitalize;
+  font-size-adjust: var(--first-color);
+  margin-bottom: 5pxpx;
+  color: var(--first-color);
+}
+
+.carousel {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 95%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: .5s;
+
+}
+
+.carousel::before,
+.carousel::after {
+  content: "";
+  width: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.carousel::before {
+  background-image: linear-gradient( 
+    to left,
+    rgba(255, 255, 255, 0) 100%
+    );
+    z-index: 1;;
+}
+
+.carousel::after {
+  background-image: linear-gradient( 
+    to left,
+    rgba(255, 255, 255, 0) 100%
+    );
+    right: 0;
+}
+
+.carousel .tech-banner {
+  height: 100%;
+  display: flex;
+  align-items: centrer;
+  animation: slide 20s linear infinite;
+}
+
+.tech-banner img {
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }     
+  to {
+    transform: translateX(-100%);  
+  }
+}
+
 /* footer */
 
 
