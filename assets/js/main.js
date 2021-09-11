@@ -1,4 +1,4 @@
-
+/ MENU HAMBURGUER /
 
 /*===== MENU SHOW Y HIDDEN =====*/ 
 const navMenu = document.getElementById('nav-menu'),
@@ -27,3 +27,5 @@ function linkAction(){
   navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
+

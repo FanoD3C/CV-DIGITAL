@@ -50,3 +50,23 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
+
+
+/*===  SCROLL UP SECTION/DIV ACTIVE LINK  ===*/
+// creamos una var const para poder manipularla + la consulta selecionada
+const sectionsActive = document.querySelectorAll('section[id]')
+// llamamos a la funcion scrollActive
+function scrollActive() {
+  // var const para eje Y (plano 2D)
+  const scrollY = windows.pageYOffset
+    sectionsActive.forEach(current =>{
+      const sectionHeight = current.offsetHeight 
+      const sectionTop = current.offsetTop - 50;
+      // Indicamos con una nueva VAR el atributo que tomaremos, en este caso ID
+      sectionId = current.getAttribute('id')
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector ('.')
+      }
+
+    })
+}
