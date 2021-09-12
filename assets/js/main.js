@@ -29,3 +29,31 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+
+
+// CARGA PEREZOSA DE IMAGENES
+inView( 'figure' ).on( 'enter', function( figure ) {
+ 
+  var img = figure.querySelector( 'img' ); // 1
+
+  if (  'undefined' !== typeof img.dataset.src ) { // 2
+
+      figure.classList.add( 'is-loading' ); // 3
+
+      // 4
+      newImg = new Image();
+      newImg.src = img.dataset.src;
+
+      newImg.addEventListener( 'load', function() {
+
+         figure.innerHTML = ''; // 5
+         figure.appendChild( this );
+
+         // 6
+         setTimeout( function() {
+            figure.classList.remove( 'is-loading' );
+            figure.classList.add( 'is-loaded' );
+         }, 300 );
+      } );
+  }
+} );

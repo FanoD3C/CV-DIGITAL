@@ -35,12 +35,13 @@
                         </div>
                     </div>
     
-                    <div class="nav__menu">
+                    <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
-                            <li class="nav__item"><a href="#" class="nav__link active">INICIO</a></li>
-                            <li class="nav__item"><a href="#content2" class="nav__link">SOBRE MI</a></li>
-                            <li class="nav__item"><a href="#content3" class="nav__link">PORTAFOLIO</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">CONTACTO</a></li>
+                            <!-- ACTIVE-LINK como clase, sera llamado desde js para poder crear la accion logica en la web -->
+                            <li class="nav__item"><a href="#" class="active-link nav__link active">INICIO</a></li>
+                            <li class="nav__item"><a href="#content2" class="active-link  nav__link">SOBRE MI</a></li>
+                            <li class="nav__item"><a href="#content3" class="active-link  nav__link">PORTAFOLIO</a></li>
+                            <li class="nav__item"><a href="#" class="active-link nav__link">CONTACTO</a></li>
                         </ul>
                     </div>
     
@@ -55,7 +56,7 @@
 
     
 
-        <div class="content-1" id="content1">
+        <section class="content-1" id="content1">
             <!-- contenedor del fondo animado -->
             <div class="content-1-fond">
 
@@ -82,22 +83,22 @@
                 
                     <!-- agregar correo de contacto -->        
             </div>
-        </div>
+        </section>
         <!-- lienzo que permite graficos con JS -->
         <!-- <canvas id="canvas1"> </canvas> -->
         
-       <div class="content-2" id="content2"> 
+       <section class="content-2" id="content2"> 
            <h2>¿ Tienes algun proyecto ?</h2>
            <p>Soy desarrollador proactivo y me encantan los desafios, si quieres que te ayude en algun proyecto tecnologico no dudes en contactarme <br> <b> Aqui te dejo mi curriculum 2021 </b></p>
            <!-- <iframe class="curriculum-pdf-fano" src="assets/document/CV-FANO-SEP-V03.pdf" frameborder="0"></iframe> -->
            <embed src="assets/document/CV-FANO-SEP-V03.pdf" type="application/pdf" width="100%" height="570px"/> 
            <h3>Descarga en formato word mi CV</h3>
            <!-- <button class="button-principal"></button> -->
-       </div>
+       </section>
 
        <!-- BANNER TECNOLOGIS IN LOVE with section -->
        <!-- OJO el contenido anterior esta dentro de un <div> y no un <section> , esto porque stoy probando distintos tipos de metodos, disculpa las molestias -->
-       <section class="content-3">
+       <section class="content-3" id="content3">
            <h2 class="section-header">Tecnologias o herramientas que uso en la <u>actualidad</u></h2>
            <div class="carousel">
                <div class="tech-banner">
@@ -108,9 +109,31 @@
                    <img src="/assets/img/tech-banner/blender.webp" alt="BLENDER" class="src">
                    <img src="/assets/img/tech-banner/VSC.webp" alt="Visual Studio Code" class="src">
                    
+                   <figure class="post__image">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="./images/image-24.jpg" alt="" width="800" height="554">
+                 </figure>
+
                </div>
             </div>
        </section>
+
+       <!-- BANNER V2  -->
+        <div class="banner-container-1">
+
+            <div class="banner-1">
+                <div class="Fanod3c-perfil">
+                    <iframe width="270" height="360" src="https://www.instagram.com/p/CTp9Pc9JS9X/embed" frameborder="0"></iframe>
+                </div>
+                <div class="content-banner">
+                    <img src="" alt="">
+                    <h2>Sigueme en instagram</h2>
+                    <p>Subo mi progreso relacionado a mi hobby con blender >3</p>
+                    <a href="https://www.instagram.com/fanod3c/" class="banner-btn">@INSTAGRAM</a>
+                </div>
+               
+            </div>
+        </div>
+
 
        <!-- ===== FOOTER =====-->
 
@@ -123,7 +146,7 @@
         </div>
        
         <!--=== Contenedor back to top boton ===-->
-         <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+         <button id="back-to-top-btn"><i class="scrollup fas fa-angle-double-up"></i></button>
 
         <!-- ===== IONICONS ===== -->
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
