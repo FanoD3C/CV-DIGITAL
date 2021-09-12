@@ -568,15 +568,19 @@ figure.is-loading:after {
   justify-content: center;
 }
 
+.Fanod3c-perfil iframe{
+  border-radius: 5%;
+}
+
 .banner-container-1 .banner-1{
   background:linear-gradient(145deg, var(--dark-color-alt) 29%, var(--dark-color-alt) 32.1%, var(--second-color) 61%, var(--dark-color-alt) 68.1%);
   border-radius: 20px;
   margin: 5%;
-  padding: 2% 10%;
+  padding: 2% 5%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  box-shadow:  15px 12px var(--first-color);
+  box-shadow: 12px 15px 12px var(--second-color);
   overflow: hidden;
   display: flex;
 }
@@ -641,6 +645,7 @@ figure.is-loading:after {
 
 .banner-container-1 .banner-1 .img-banner img{
   width:100%;
+  
 }
 
 @media (max-width:768px){

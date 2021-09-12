@@ -53,40 +53,40 @@ function easeInOutCubic(t, b, c, d) {
 
 
 /*===  SCROLL UP SECTION/DIV ACTIVE LINK  ===*/
-// creamos una var const para poder manipularla + la consulta selecionada
-const sectionsActive = document.querySelectorAll('section[id]')
-// llamamos a la funcion scrollActive
-function scrollActive() {
-  // var const para eje Y (plano 2D)
-  const scrollY = windows.pageYOffset
-    sectionsActive.forEach(current =>{
-      const sectionHeight = current.offsetHeight 
-      const sectionTop = current.offsetTop - 50;
-      // Indicamos con una nueva VAR el atributo que tomaremos, en este caso ID
-      sectionId = current.getAttribute('id')
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        // usamos la clase active link para dar una accion
-        document.querySelector ('.nav__menu a[href*=]' + sectionId + '}').classList.add('active-link')
-      }else{
-        document.querySelectorAll('.nav__menu a[href*=]' + sectionId + ']').classList.remove('active-link')
-      }
-    })
-}
+// // creamos una var const para poder manipularla + la consulta selecionada
+// const sectionsActive = document.querySelectorAll('section[id]')
+// // llamamos a la funcion scrollActive
+// function scrollActive() {
+//   // var const para eje Y (plano 2D)
+//   const scrollY = windows.pageYOffset
+//     sectionsActive.forEach(current =>{
+//       const sectionHeight = current.offsetHeight 
+//       const sectionTop = current.offsetTop - 50;
+//       // Indicamos con una nueva VAR el atributo que tomaremos, en este caso ID
+//       sectionId = current.getAttribute('id')
+//       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//         // usamos la clase active link para dar una accion
+//         document.querySelector ('.nav__menu a[href*=]' + sectionId + '}').classList.add('active-link')
+//       }else{
+//         document.querySelectorAll('.nav__menu a[href*=]' + sectionId + ']').classList.remove('active-link')
+//       }
+//     })
+// }
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
-  // reset: true
-})
+// /*=============== SCROLL REVEAL ANIMATION ===============*/
+// const sr = ScrollReveal({
+//   distance: '60px',
+//   duration: 2500,
+//   delay: 400,
+//   // reset: true
+// })
 
-sr.reveal(`.content-1, .content-1-fond`,{delay: 600})
-// sr.reveal(`.home__footer`,{delay: 700})
-sr.reveal(`.content-1-logo`,{delay: 900, origin: 'top'})
+// sr.reveal(`.content-1, .content-1-fond`,{delay: 600})
+// // sr.reveal(`.home__footer`,{delay: 700})
+// sr.reveal(`.content-1-logo`,{delay: 900, origin: 'top'})
 
-sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: 'top', interval: 100})
-sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
-sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
-sr.reveal(`.case__img`,{origin: 'top'})
-sr.reveal(`.case__data`)
+// sr.reveal(`.sponsor__img, .products__card, .footer__logo, .footer__content, .footer__copy`,{origin: 'top', interval: 100})
+// sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
+// sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
+// sr.reveal(`.case__img`,{origin: 'top'})
+// sr.reveal(`.case__data`)
