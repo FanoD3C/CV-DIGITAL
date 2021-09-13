@@ -8,7 +8,7 @@
   --header-height: 3rem;
   
   /*===== Colores =====*/
-  --first-color: #3191ff;
+  --first-color: #1b28e9;
   --second-color: #62ef10;
   --third-color: #1fbe10e3;
   --dark-color: #0c0e14;
@@ -105,7 +105,8 @@ body {
   color: white;
   background-color: #070703;
   opacity: 1;
-  background-image:  linear-gradient(30deg, #089ede 12%, transparent 12.5%, transparent 87%, #089ede 87.5%, #089ede), linear-gradient(150deg, #089ede 12%, transparent 12.5%, transparent 87%, #089ede 87.5%, #089ede), linear-gradient(30deg, #089ede 12%, transparent 12.5%, transparent 87%, #089ede 87.5%, #089ede), linear-gradient(150deg, #089ede 12%, transparent 12.5%, transparent 87%, #089ede 87.5%, #089ede), linear-gradient(60deg, #089ede77 25%, transparent 25.5%, transparent 75%, #089ede77 75%, #089ede77), linear-gradient(60deg, #089ede77 25%, transparent 25.5%, transparent 75%, #089ede77 75%, #089ede77);
+  /* cubos */
+  background-image:  linear-gradient(30deg, var(--first-color) 12%, transparent 12.5%, transparent 87%, var(--first-color) 87.5%, var(--first-color)), linear-gradient(150deg, var(--first-color) 12%, transparent 12.5%, transparent 87%, var(--first-color) 87.5%, var(--first-color)), linear-gradient(30deg, var(--first-color) 12%, transparent 12.5%, transparent 87%, var(--first-color) 87.5%, var(--first-color)), linear-gradient(150deg, var(--first-color) 12%, transparent 12.5%, transparent 87%, var(--first-color) 87.5%, var(--first-color)), linear-gradient(60deg, hsla(198, 93%, 45%, 0.795) 25%, transparent 25.5%, transparent 75%, hsla(198, 93%, 45%, 0.795) 75%, #089ede77), linear-gradient(60deg, hsla(198, 93%, 45%, 0.795) 25%, transparent 25.5%, transparent 75%, #089ede77 75%, #089ede77);
   background-size: 78px 137px;
   background-position: 0 0, 0 0, 39px 68px, 39px 68px, 0 0, 39px 68px;
 }
@@ -720,10 +721,17 @@ figure:before {
   /* Rounded border */
   background-color: var(--second-color);
   border-radius: 9999px;
+  margin: 25px;
+  text-align: center;
 
+  
   /* Size */
-  height: 32px;
-  width: 32px;
+  height: 55px;
+  width: 55px;
+}
+
+.container__circle p {
+  color: var(--dark-color-alt);
 }
 
 .container__title {
