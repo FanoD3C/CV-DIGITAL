@@ -8,6 +8,9 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+         <!-- ===== CSS ===== -->
+         <link rel="stylesheet" href="assets/css/carousel.css">
+
         <!-- ===== ICONO ===== -->
         <link rel="icon" type="image/x-icon" href="assets/img/icon/fanodev.ico" class="icono-circular" />
 
@@ -86,21 +89,76 @@
         </section>
         <!-- lienzo que permite graficos con JS -->
         <!-- <canvas id="canvas1"> </canvas> -->
+
+        
+        <!-- BANNER V2  -->
+        <div class="banner-container-1">
+            <div class="banner-1 box-shadow-content">
+                <div class="Fanod3c-perfil">
+                    <h1>Sigueme en instagram</h1>
+                    <iframe width="270" height="360" src="https://www.instagram.com/p/CTp9Pc9JS9X/embed" frameborder="0"></iframe>
+                </div>
+                <div class="content-banner">
+                    <img src="" alt="">
+                        <h2>Subo mi progreso semana a semana</h2>
+                        <p>relacionado a mi hobby con el Modelado 3D / Desarrollo web / Filtros AR y muchas otras mas >3</p>
+                        <a href="https://www.instagram.com/fanod3c/" class="banner-btn">@INSTAGRAM</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- Left vertical line -->
+            <div class="container__line"></div>
+        
+            <!-- The timeline items container -->
+            <ul class="container__items">
+                <!-- Each timeline item -->
+                <li class="container__item">
+                    <!-- The circle and title -->
+                    <div class="container__top">
+                        <!-- The circle -->
+                        <div class="container__circle"></div>
+        
+                        <!-- The title -->
+                        <div class="container__title">
+                            <h2> HOLA MUNDO </h2>
+                        </div>
+                    </div>
+        
+                    <!-- The description -->
+                    <div class="container__desc">
+                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quaerat impedit quo necessitatibus ipsa excepturi velit nemo harum error minima corporis possimus autem iure, alias quasi quis at provident. Incidunt.
+                        Accusantium officiis id placeat quam maxime ex fugit facere repellat fugiat harum corrupti exercitationem eum sint tempore, consequuntur consequatur dicta. Sint in voluptatibus aliquid ducimus iusto quo perspiciatis atque nostrum!
+                        Tempore nostrum corrupti, facilis rerum maxime iure fugit iste mollitia ducimus aliquid tenetur officiis veritatis. Soluta asperiores inventore facere tempora quos voluptatum aliquam dolores, ad voluptates, vitae dolore exercitationem dolorum.
+                        Ea quod, m officia reprehenderit aut velit, sunt sit, doloribus impedit deleniti? Quaerat minus distinctio culpa reprehenderit iusto rem id est quas. Dolor aperiam placeat voluptate?</p>
+                    </div>
+                </li>
+        
+                <!-- Repeat other items -->
+                ...
+            </ul>
+        </div>
+        
+ 
         
        <section class="content-2" id="content2"> 
            <h2>¿ Tienes algun proyecto ?</h2>
            <p>Soy desarrollador proactivo y me encantan los desafios, si quieres que te ayude en algun proyecto tecnologico no dudes en contactarme <br> <b> Aqui te dejo mi curriculum 2021 </b></p>
-           <!-- <iframe class="curriculum-pdf-fano" src="assets/document/CV-FANO-SEP-V03.pdf" frameborder="0"></iframe> -->
-           <embed src="assets/document/CV-FANO-SEP-V03.pdf" type="application/pdf" width="100%" height="570px"/> 
+           <iframe class="curriculum-pdf-fano" src="assets/document/CV-FANO-SEP-V03.pdf" frameborder="0"></iframe>
+           <!-- <embed src="assets/document/CV-FANO-SEP-V03.pdf" type="application/pdf" width="100%" height="570px"/>  -->
            <h3>Descarga en formato word mi CV</h3>
            <!-- <button class="button-principal"></button> -->
        </section>
 
        <!-- BANNER TECNOLOGIS IN LOVE with section -->
        <!-- OJO el contenido anterior esta dentro de un <div> y no un <section> , esto porque stoy probando distintos tipos de metodos, disculpa las molestias -->
-       <section class="content-3" id="content3">
+       <!-- <section class="content-3" id="content3">
            <h2 class="section-header">Tecnologias o herramientas que uso en la <u>actualidad</u></h2>
-           <div class="carousel">
+            -->
+
+
+           <!-- <div class="carousel">
                <div class="tech-banner">
                    <img src="/assets/img/tech-banner/js.webp" alt="JS" class="src">
                    <img src="/assets/img/tech-banner/php.webp" alt="PHP" class="src">
@@ -114,25 +172,11 @@
                  </figure>
 
                </div>
-            </div>
-       </section>
+            </div> -->
+       <!-- </section> -->
 
-       <!-- BANNER V2  -->
-        <div class="banner-container-1">
+       
 
-            <div class="banner-1">
-                <div class="Fanod3c-perfil">
-                    <iframe width="270" height="360" src="https://www.instagram.com/p/CTp9Pc9JS9X/embed" frameborder="0"></iframe>
-                </div>
-                <div class="content-banner">
-                    <img src="" alt="">
-                    <h2>Sigueme en instagram</h2>
-                    <p>Subo mi progreso relacionado a mi hobby con blender >3</p>
-                    <a href="https://www.instagram.com/fanod3c/" class="banner-btn">@INSTAGRAM</a>
-                </div>
-               
-            </div>
-        </div>
 
 
        <!-- ===== FOOTER =====-->
@@ -148,9 +192,10 @@
         <!--=== Contenedor back to top boton ===-->
          <button id="back-to-top-btn"><i class="scrollup fas fa-angle-double-up"></i></button>
 
-        <!-- ===== IONICONS ===== -->
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
+     
+        <!-- contador de actualizacion del portafolio -->
+        <script type="text/javascript" src="assets/js/coutdown.js"></script>
+       
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
 
@@ -160,15 +205,17 @@
         <!--===== IN VIEW MIN JS =====-->
         <script src="assets/js/in-view.min.js"></script>
 
+        <!-- slick menu -->
+        <script src="assets/js/slick.min.js"></script>
+
         <!-- ===== FONTAWESOME JS ===== -->
         <script src="https://kit.fontawesome.com/96ae1880a6.js" crossorigin="anonymous"></script>
-
          
-        <!-- contador de actualizacion del portafolio -->
-        <script type="text/javascript" src="assets/js/coutdown.js"></script>
-        
         <!-- icons menu -->
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script>
 
     </body>
 </html>
