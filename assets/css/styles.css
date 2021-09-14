@@ -672,7 +672,7 @@ figure.is-loading:after {
   }
 }
 
-/* fin banner */
+/* fin banner v2 */
 
 /* mejorar carga en web */
 figure {
@@ -687,12 +687,29 @@ figure img {
 figure:before {
   padding-top: 69.25%; /*/ ( 554 / 800 ) * 100%*/
 }
+/* fin carga dde web */
 
 /* CRONOLOGIA*/
 .container {
   /* Used to position the left vertical line */
   position: relative;
   margin: 12px;
+}
+
+#more1, #more2, #more3, #more4 {
+  display: none;
+}
+
+.read-more-btn-class {
+  padding: 15px 30px;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  border: 6px solid;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5%;
+  border-radius: 15px 35px;
 }
 
 .container__line {
@@ -751,6 +768,8 @@ figure:before {
   /* Make it align with the title */
   margin-left: 48px;
 }
+
+/* FIN cronologia */
 
 
 /* footer */
