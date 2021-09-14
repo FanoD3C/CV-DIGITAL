@@ -87,11 +87,11 @@ function btnMoreFunction3() {
 
   if (dots3.style.display === "none") {
     dots3.style.display = "inline";
-    btnText3.innerHTML = "Saber mas 2016";
+    btnText3.innerHTML = "Saber mas / 2016";
     moreText3.style.display = "none";
   } else {
     dots3.style.display = "none";
-    btnText3.innerHTML = "Mucho texto 2016";
+    btnText3.innerHTML = "Mucho texto / 2016";
     moreText3.style.display = "inline";
   }
 }
@@ -105,14 +105,86 @@ function btnMoreFunction4() {
 
   if (dots4.style.display === "none") {
     dots4.style.display = "inline";
-    btnText4.innerHTML = "Saber mas 2018";
+    btnText4.innerHTML = "Saber mas / 2017";
     moreText4.style.display = "none";
   } else {
     dots4.style.display = "none";
-    btnText4.innerHTML = "Mucho texto 2018";
+    btnText4.innerHTML = "Mucho texto / 2017";
     moreText4.style.display = "inline";
   }
 }
+
+// BTN LEER MAS (5) 
+
+function btnMoreFunction5() {
+  var dots5 = document.getElementById("dots5");
+  var moreText5 = document.getElementById("more5");
+  var btnText5 = document.getElementById("read-more-btn5");
+
+  if (dots5.style.display === "none") {
+    dots5.style.display = "inline";
+    btnText5.innerHTML = "Saber mas / 2018";
+    moreText5.style.display = "none";
+  } else {
+    dots5.style.display = "none";
+    btnText5.innerHTML = "Mucho texto / 2018";
+    moreText5.style.display = "inline";
+  }
+}
+
+// BTN LEER MAS (6) 
+
+function btnMoreFunction6() {
+  var dots6 = document.getElementById("dots6");
+  var moreText6 = document.getElementById("more6");
+  var btnText6 = document.getElementById("read-more-btn6");
+
+  if (dots6.style.display === "none") {
+    dots6.style.display = "inline";
+    btnText6.innerHTML = "Saber mas / 2019";
+    moreText6.style.display = "none";
+  } else {
+    dots6.style.display = "none";
+    btnText6.innerHTML = "Mucho texto / 2019";
+    moreText6.style.display = "inline";
+  }
+}
+// BTN LEER MAS (7) 
+
+function btnMoreFunction7() {
+  var dots7 = document.getElementById("dots7");
+  var moreText7 = document.getElementById("more7");
+  var btnText7 = document.getElementById("read-more-btn7");
+
+  if (dots7.style.display === "none") {
+    dots7.style.display = "inline";
+    btnText7.innerHTML = "Saber mas / 2020";
+    moreText7.style.display = "none";
+  } else {
+    dots7.style.display = "none";
+    btnText7.innerHTML = "Mucho texto / 2020";
+    moreText7.style.display = "inline";
+  }
+}
+// BTN LEER MAS (8) 
+
+function btnMoreFunction8() {
+  var dots8 = document.getElementById("dots8");
+  var moreText8 = document.getElementById("more8");
+  var btnText8 = document.getElementById("read-more-btn8");
+
+  if (dots8.style.display === "none") {
+    dots8.style.display = "inline";
+    btnText8.innerHTML = "Saber mas / 2021";
+    moreText8.style.display = "none";
+  } else {
+    dots8.style.display = "none";
+    btnText8.innerHTML = "Mucho texto / 2021";
+    moreText8.style.display = "inline";
+  }
+}
+
+
 
 
 // SLIDER TECHONOLIG
