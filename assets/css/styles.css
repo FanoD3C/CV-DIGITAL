@@ -388,6 +388,14 @@ button {
 
 /* formato del segundo contenedor */
 .content-2 {
+  padding: 2%;
+}
+
+.content-2 .container__desc p {
+  font-size: 1.4rem;  
+}
+/* formato content-3 */
+.content-3 {
   padding: 1%;
   margin-left: 2%;
   margin-right: 2%;
@@ -404,7 +412,7 @@ button {
   filter: drop-shadow(0 0 10px var(--first-color));
 }
 /* fondo background 8 */
-.content-2::after {
+.content-3::after {
   content:"";
   position:absolute;
   top:0;
@@ -415,12 +423,12 @@ button {
   z-index:-1;
   border-radius: 20px;
 }
-.content-2 p {
+.content-3 p {
   text-align: center;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;color: blanchedalmond;
 }
-.content-2 
+.content-3
 h2,
 b {
   color: var(--second-color);
@@ -852,6 +860,12 @@ figure:before {
 .active {
   color: var(--first-color);
 }
+
+.content-2 .container__desc p {
+  font-size: 1.15rem;
+}
+
+
 
 
 /*===== MEDIA QUERIES =====*/
