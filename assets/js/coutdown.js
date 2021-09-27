@@ -39,7 +39,7 @@ const getTimeRest = deadline =>{ // parametro (con tipo de dato STRING) que reci
         }, 1000)
     };
 
-    countdown('Mon Sep 20 2021 21:30:00 GMT-0400', 'clock', 'Actualiza el portafolio hoy');
+    countdown('Mon Oct 3 2021 21:30:00 GMT-0400', 'clock', 'Actualiza el portafolio hoy');
 
 
 
