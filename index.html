@@ -10,8 +10,12 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-         <!-- ===== CSS ===== -->
-         <!-- <link rel="stylesheet" href="assets/css/carousel.css"> -->
+        <!-- ===== CSS ===== -->
+        <!-- <link rel="stylesheet" href="assets/css/carousel.css"> -->
+
+        <!-- ==== CSS SPLIDE==== -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 
         <!-- ===== ICONO ===== -->
         <link rel="icon" type="image/x-icon" href="assets/img/icon/fanodev.ico" class="icono-circular" />
@@ -66,7 +70,10 @@
         <section class="content-1" id="content1">
             <!-- contenedor del fondo animado -->
             <div class="content-1-fond ">
-                <div class="content-parrafo">  
+                <!-- Contenedor para ordenar el parrafo / iamgenes etc -->
+                <div class="content-parrafo">
+                <!-- contenedor de informacion dle sitio -->
+              
 
                 <!-- contador de actualizacion del portafolio -->
                 <!-- id clock lo usamos con un get desde js -->
@@ -79,7 +86,9 @@
                 <!-- <div id="qrcode">
                     <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Ffanod3c.netlify.app%2F&s=8&e=l" alt="Generador de Códigos QR Codes"/>
                 </div> -->
-                <h1>Welcome my bro!</h1>
+
+                <button onclick="myFunctionInfo()">!! LEER INFORMACION IMPORTANTE SOBRE EL SITIO !!</button>
+                <h1>Welcome bro!</h1>
                 <!-- subtitulo -->
                                   
                     
@@ -325,7 +334,7 @@
                             </div>
                             <!-- Titulo de la cronologia -->
                             <div class="container__title">
-                                <h2> Especializandome en 3D / AR / web / C++ / JS / CSS + Sass. </h2>
+                                <h2> Aprendiendo 3D / AR / CSS / JS / C++ / PHP </h2>
                             </div>
                         </div>
             
@@ -350,6 +359,7 @@
 
         </section>
         <!-- PROYECTOS 3D SECTION 3 -->
+        
         <!-- SECTION DEL PROYECTO 3D -->
         <section id="projects">
             <!-- NOS  PERMITE VISUALIZAR EL CONTAINER 3D -->
@@ -381,8 +391,8 @@
                         <div class="project-info">
                             <h1>Proyecto <span>2 </span><i class="fas fa-cogs"></i></h1>
                             <!-- <h2>Reparacion</h2> -->
-                            <p> Este modelo 3D <i class="fas fa-cubes"></i> no fue creado por mi persona, pero lo que si hice en este modelo fue transformarlo, habilitarlo y adaptarlo para que pueda ser visualizado en la web⌨️ en distintos dispositivos moviles,
-                                 tablets <i class="fas fa-tablet-alt"></i>, hasta computadoras desde una web sin necesidad de instalar aplicaciones especificas⚙️. Este objeto 3D estaba en internet en un fomrato de unity o era .c4d o .obj, no recuerdo muy bien, pero yo tuve que cambiarlo de formato <i class="fas fa-wrench"></i> y activar unas funciones con model-viewer para que pudiera tener una accion en la web y este se puediera visualizar</p>
+                            <p> Este modelo 3D <i class="fas fa-cubes"></i> no <b>fue creado por mi</b> persona, pero lo que <b>si hice en este modelo fue transformarlo, habilitarlo y adaptarlo para que pueda ser visualizado en la web⌨️</b> y en distintos dispositivos moviles,
+                                 tablets <i class="fas fa-tablet-alt"></i>, hasta computadoras desde una web sin necesidad de instalar aplicaciones especificas⚙️. <br><br> Este <b>objeto 3D estaba</b> en internet en un fomrato de <b>unity</b> o era <b>.c4d</b> o <b>.obj</b>, no recuerdo muy bien, pero yo tuve que <b>cambiarlo de formato</b> <i class="fas fa-wrench"></i> y activar unas funciones con <b>model-viewer</b> para que pudiera tener una accion en la web y este se puediera visualizar con movimientos.</p>
                         </div>
                         <model-viewer src="assets/model/eje/eje-mecanizado.gltf" poster="assets/model/loader3D/Loa10.webp" reveal="interaction" alt="Eje mecanico" ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878" shadow-intensity="1" camera-controls
                             autoplay auto-rotate ar ar-scale="fixed" ar-modes="webxr scene-viewer quick-look fallback" quick-look-browsers magic-leap ar 3d_preferred ar_only browser_fallback_url>
@@ -393,9 +403,59 @@
             </div>
         </section>
         <!-- End Projects Section -->
+        <!-- slider de trajos actuales -->
+        <section class="content-slider">
+            <div class="img-slider">
+                <h1>Lenguajes y tecnologias que uso</h1>
+                <div class="slide">
+                    <!-- slide 1 -->
+                    <img class="slide-img"src="/assets/img/tech-banner/js.webp" alt="1">
+                    <div class="info-slide">
+                        <h2>
+                            ENAMORADO DE JS
+                        </h2>
+                        <p>HOLA MUNDO 1</p>
+                        <!-- <p>JS fue uno de los primeros lenguajes que conoci, pero que no le tomo importancia, luego 
+                            al pasar con los a;os, investigue sobre JS y es literalmente ARTE digital jaja</p> -->
+                    </div>
+                </div>
+                <div class="slide">
+                    <!-- slide 1 -->
+                    <img class="slide-img" src="/assets/img/tech-banner/C-.webp" alt="2">
+                    <div class="info-slide">
+                        <h2>
+                            ENAMORADO DE JS
+                        </h2>
+                        <p>HOLA MUNDO 2</p>
+                        <!-- <p>JS fue uno de los primeros lenguajes que conoci, pero que no le tomo importancia, luego 
+                            al pasar con los a;os, investigue sobre JS y es literalmente ARTE digital jaja</p> -->
+                    </div>
 
-        
-        
+                </div>
+                <div class="slide">
+                    <!-- slide 1 -->
+                    <img src="/assets/img/background-8.webp" alt="3">
+                    <div class="info-slide">
+                        <h2>
+                            HIPNOTISADO POR JS
+                        </h2>
+                        <p>HOLA MUNDO 3 Lorem ipsum dolor sit eiciendis nulla aliquid dicta! Exercitationem accusamus totam quos quibusdam laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quos, ipsam odit nesciunt dignissimos earum alias veritatis, quas labore voluptatum odio, perferendis vel necessitatibus soluta culpa! Esse earum sint excepturi.</p>
+                        <!-- <p>JS fue uno de los primeros lenguajes que conoci, pero que no le tomo importancia, luego 
+                            al pasar con los a;os, investigue sobre JS y es literalmente ARTE digital jaja</p> -->
+                    </div>
+                </div>
+                <div class="navigation-slide">
+                    <div class="btn-slide"></div>
+                    <div class="btn-slide"></div>
+                    <div class="btn-slide"></div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- fin slider -->
+
+
+        <!-- section de cv -->
        <section class="content-3" id="content3"> 
            <h2>¿ Tienes algun proyecto <i class="fas fa-briefcase"></i> ? </h2>
            <p>Soy desarrollador proactivo y me encantan los desafios, si quieres que te ayude en algun proyecto tecnologico no dudes en contactarme <br> <b> Aqui te dejo mi curriculum 2021 </b> <i class="far fa-address-card"></i></p>
@@ -612,6 +672,12 @@
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
 
+        <!-- GLIDER min JS -->
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+        
+        <!-- SLIDER min JS -->
+        <!-- <script src="assets/js/slider-glider.js"></script> -->
+
         <!-- ===== BACKTOTOP JS  ===== -->
         <script src="assets/js/backtotop.js"></script>
 
@@ -634,7 +700,11 @@
         <!-- Loads <model-viewer> for old browsers like IE11: -->
         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
+        <!-- model viewer min -->
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+       
+        <!-- splide -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script> -->
 
         <!-- jquery -->
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" ></script> -->
