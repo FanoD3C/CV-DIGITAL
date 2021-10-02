@@ -198,14 +198,31 @@ function btnMoreFunction8() {
     moreText8.style.display = "inline";
   }
 }
+// SLIDER 
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn-slide');
+let currentSlide = 1;
 
+// manual navigation slider
+var manualNav = function (manual){
+  slides.forEach((slideRemove) => {
+    slideRemove.classList.remove('activeSlide');
+    
+    btns.forEach((btnRemove) => {
+      btnRemove.classList.remove('activeSlide');
+    });
+  });
+  // a la var slides incializada anteriormente, le vamos asignar como objeto el parametro manual
+  slides[manual].classList.add('activeSlide');
+  btns[manual].classList.add('activeSlide');
+}
 
-
-
-// SLIDER TECHONOLIG
-
-
-
+btns.forEach((btnEvent, i) => {
+  btnEvent.addEventListener("click", () => {
+    manualNav(i);
+    currentSlide = i;
+  });
+});
 
 // CARGA PEREZOSA DE IMAGENES
 // inView( 'figure' ).on( 'enter', function( figure ) {
@@ -235,33 +252,33 @@ function btnMoreFunction8() {
 // } );
 
 // CAROUSEL SLIDER CON LIBRERIA GLICKJS
-window.addEventListener('load', function(){
-	new Glider(document.querySelector('.carousel__lista'), {
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: '.carousel__indicadores',
-		arrows: {
-			prev: '.carousel__anterior',
-			next: '.carousel__siguiente'
-		},
-		responsive: [
-			{
-			  // screens greater than >= 775px
-			  breakpoint: 450,
-			  settings: {
-				// Set to `auto` and provide item width to adjust to viewport
-				slidesToShow: 2,
-				slidesToScroll: 2
-			  }
-			},{
-			  // screens greater than >= 1024px
-			  breakpoint: 800,
-			  settings: {
-				slidesToShow: 4,
-				slidesToScroll: 4
-			  }
-			}
-		]
-	});
-});
+// window.addEventListener('load', function(){
+// 	new Glider(document.querySelector('.carousel__lista'), {
+// 		slidesToShow: 1,
+// 		slidesToScroll: 1,
+// 		dots: '.carousel__indicadores',
+// 		arrows: {
+// 			prev: '.carousel__anterior',
+// 			next: '.carousel__siguiente'
+// 		},
+// 		responsive: [
+// 			{
+// 			  // screens greater than >= 775px
+// 			  breakpoint: 450,
+// 			  settings: {
+// 				// Set to `auto` and provide item width to adjust to viewport
+// 				slidesToShow: 2,
+// 				slidesToScroll: 2
+// 			  }
+// 			},{
+// 			  // screens greater than >= 1024px
+// 			  breakpoint: 800,
+// 			  settings: {
+// 				slidesToShow: 4,
+// 				slidesToScroll: 4
+// 			  }
+// 			}
+// 		]
+// 	});
+// });
 
