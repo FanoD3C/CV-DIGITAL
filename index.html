@@ -25,48 +25,36 @@
         <title>FanoD3C</title>
     </head>
     <body>
-        <header class="header">
-            <a href="#" class="header__logo">FANOD3C</a>
-    
-            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-    
-            <nav class="nav" id="nav-menu">
-                <div class="nav__content bd-grid">
-    
-                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-    
-                    <div class="nav__perfil">
-                        <div class="nav__img">
-                            <img src="assets/img/IMG_0166.webp" alt="@Fanod3c">
-                        </div>
-                        
-                        <div class="nav__content" >
-                            <a href="#" class="nav__name">FANOD3C</a>
-                            <span class="nav__profesion">Desarrollador web</span>
-                        </div>
+        <section id="header">
+            <div class="header containerNav">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <h1>FanoD3c</h1>
+                        </a>
                     </div>
-    
-                    <div class="nav__menu" id="nav-menu">
-                        <ul class="nav__list">
-                            <!-- ACTIVE-LINK como clase, sera llamado desde js para poder crear la accion logica en la web -->
-                            <li class="nav__item"><a href="#" class="active-link nav__link active">INICIO</a></li>
-                            <li class="nav__item"><a href="#content2" class="active-link  nav__link">SOBRE MI</a></li>
-                            <li class="nav__item"><a href="#content3" class="active-link  nav__link">CURRICULUM</a></li>
-                            <li class="nav__item"><a href="#footer" class="active-link nav__link">CONTACTO</a></li>
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
+                        </div>
+                        <ul>
+                            <li><a href="#hero" data-after="Inicio" style="font-size: small;">Inicio</a></li>
+                            <li><a href="#content2" data-after="Sobre mi Exp." style="font-size: small;">Exp. Laboral</a></li>
+                            <li><a href="#projects" data-after="Proyectos" style="font-size: small;">Proyectos 3D</a></li>
+                            <li><a href="#tarjetasAR" data-after="Tarjetas AR" style="font-size: small;">Tarjetas AR</a></li> 
+                            <li><a href="#filtrosAR" data-after="Filtros AR" style="font-size: small;">Filtros AR</a></li>
+                            <!-- <li><a href="/equipamiento.html" data-after="Equipamiento" style="font-size: small;">Equipos</a></li> -->
+                            <!-- <li><a href="/cotizacion.html" data-after="Cotizacion" style="font-size: small;">Cotizacion</a></li> -->
+                            <li><a href="#contact" data-after="Contactos" style="font-size: small;">Contacto</a></li>
+                            <!-- <li><a href="/index.php" data-after="Login" style="font-size: small;">Login</a></li> -->
                         </ul>
                     </div>
-    
-                    <div class="nav__social">
-                        <a href="https://www.facebook.com/Fanod3c/?ref=page_internal" class="nav__social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="https://github.com/FanoD3C" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
-                        <a href="https://www.instagram.com/fanod3c/" class="nav__social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
-                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </section>
 
     
-
+        <!-- PRESENATCION -->
         <section class="content-1" id="content1">
             <!-- contenedor del fondo animado -->
             <div class="content-1-fond ">
@@ -108,7 +96,7 @@
             <div class="banner-1 box-shadow-content">
                 <div class="Fanod3c-perfil">
                     <h1>Sigueme en instagram</h1>
-                    <iframe width="270" height="360" src="https://www.instagram.com/p/CTp9Pc9JS9X/embed" frameborder="0"></iframe>
+                    <iframe title="Instagram FanoD3c"width="270" height="360" src="https://www.instagram.com/p/CTp9Pc9JS9X/embed" frameborder="0"></iframe>
                 </div>
                 <div class="content-banner">
                     <img src="" alt="">
