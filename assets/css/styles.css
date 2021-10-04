@@ -1265,17 +1265,6 @@ model-viewer {
 
 /* MEDIA PANTALLAS TABLETS */
 @media only screen and (min-width: 768px) {
-  #header .header {
-    background-color: var(--dark-color);
-    transition: .3s ease background-color;
-    height: 60px;
-  }
-
-  .brand h1 {
-    color: #fff;
-    margin-left: 10px;
-  }
-
   #header .hamburger {
     height: 60px;
     width: 60px;
