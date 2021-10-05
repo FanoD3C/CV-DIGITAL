@@ -1262,10 +1262,8 @@ model-viewer {
   }
 
   .pdfview {
-    width: 295px;
+    width: 100%;
     height: 500px;
-    display: block; 
-
   }
   
 }
@@ -1319,7 +1317,11 @@ model-viewer {
     background-color: rgb(115, 255, 0);
     transition: .3s ease;
     transition-property: top, bottom;
-
+  }
+  .pdfview {
+    width: 100%;
+    height: 800px;
+  }
 }
 
 
