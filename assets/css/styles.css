@@ -779,25 +779,25 @@ model-viewer {
 /* fin model viewer */
 
 /* PDF CURRICULUM VERSION 1 / IFRAME */
-.curriculum-pdf-fano {
+/* .curriculum-pdf-fano {
   width: 100%;
   height: 550px;
-}
+} */
 
 /*  FIN PDF VERSION / IFRAME */
 
 /* PDF VERSION 2 */
-/* .pdfview { */
+.pdfview {
   /* Centrado */
-  /* margin: auto;
-  display: block; */
+   margin: auto;
+  display: block; 
   /* Tamaño */
-  /* width: 100%;
-  height: 100vh; */
+  width: 100%;
+  height: 100vh;
   /* Mejorar aspecto */
-  /* border-radius: 20px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
+} 
 /* FIN PDF VERSION 2 */
 
 /* slider tech */
@@ -1259,6 +1259,13 @@ model-viewer {
 
   .section-title{
     font-size: 3rem;
+  }
+
+  .pdfview {
+    width: 295px;
+    height: 500px;
+    display: block; 
+
   }
   
 }
