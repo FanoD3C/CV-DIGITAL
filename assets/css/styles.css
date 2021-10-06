@@ -265,12 +265,15 @@ button {
   transition: .3s ease letter-spacing;
 }
 
-#header .nav-list ul li:hover a::after {
+#header .nav-list ul li:hover li:focus a::after {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: normal;
 }
 
 #header .nav-list ul li:hover a {
+  color: var(--second-color);
+}
+.nav-list ul li:focus a {
   color: var(--second-color);
 }
 
@@ -461,7 +464,7 @@ footer{
   transition: ease 0.3s;
   animation: efecto 2s infinite;
 }
-.container-boton:hover{
+.container-boton:hover, .container-boton:focus{
   transition: 0.3s;
 }
 
@@ -1127,12 +1130,12 @@ model-viewer {
     transition: .3s ease letter-spacing;
   }
   
-  #header .nav-list ul li:hover a::after {
+  #header .nav-list ul li:hover a::after, li:focus {
     transform: translate(-50%, -50%) scale(1);
     letter-spacing: normal;
   }
   
-  #header .nav-list ul li:hover a {
+  #header .nav-list ul li:hover a , li:focus{
     color: rgb(0, 0, 0);
   }
   
