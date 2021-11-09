@@ -27,35 +27,7 @@ menu_item.forEach((item) => {
     });
 });
 
-/ MENU HAMBURGUER /
 
-/*===== MENU SHOW Y HIDDEN =====*/ 
-const navMenu = document.getElementById('nav-menu'),
-      toggleMenu = document.getElementById('nav-toggle'),
-      closeMenu = document.getElementById('nav-close')
-
-/*SHOW*/ 
-toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
-})
-
-/*HIDDEN*/
-closeMenu.addEventListener('click', ()=>{
-    navMenu.classList.remove('show')
-})
-
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('.nav__link');   
-
-function linkAction(){
-  /*Active link*/
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
-  
-  /*Remove menu mobile*/
-  navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // ============ BTN INFO MORE
 function myFunctionInfo() {
@@ -227,31 +199,8 @@ function btnMoreFunction8() {
     moreText8.style.display = "inline";
   }
 }
-// SLIDER 
-var slides = document.querySelectorAll('.slide');
-var btns = document.querySelectorAll('.btn-slide');
-let currentSlide = 1;
 
-// manual navigation slider
-var manualNav = function (manual){
-  slides.forEach((slideRemove) => {
-    slideRemove.classList.remove('activeSlide');
-    
-    btns.forEach((btnRemove) => {
-      btnRemove.classList.remove('activeSlide');
-    });
-  });
-  // a la var slides incializada anteriormente, le vamos asignar como objeto el parametro manual
-  slides[manual].classList.add('activeSlide');
-  btns[manual].classList.add('activeSlide');
-}
 
-btns.forEach((btnEvent, i) => {
-  btnEvent.addEventListener("click", () => {
-    manualNav(i);
-    currentSlide = i;
-  });
-});
 
 // CARGA PEREZOSA DE IMAGENES
 // inView( 'figure' ).on( 'enter', function( figure ) {
